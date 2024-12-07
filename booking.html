@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="booking.css" />
+    <title>Sky Explorer</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">Sky Explorer</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#bookings">Bookings</a>
+            <a href="#about">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="customersupport.html">Customer Support</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1><i>Plan Your Journey With Ease!</i></h1>
+        <form action="#" method="GET">
+            <div class="form-place">
+                <div class="form-group">
+                    <label for="departure">Departure:</label>
+                    <input type="text" id="departure" name="departure" placeholder="Enter departure city" required />
+                </div>
+                <div class="form-group">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" placeholder="Enter destination city" required />
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required />
+            </div>
+            <button type="submit" class="search-btn">Search Flights</button>
+        </form>
+    </div>
+
+    <h1 class="booking-title">
+        Your Next Adventure Awaits-Book a Flight Today
+    </h1>
+    <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://www.politico.eu/cdn-cgi/image/width=1160,height=775,quality=80,onerror=redirect,format=auto/wp-content/uploads/2023/01/12/GettyImages-1231061762-scaled.jpg " alt="Discover Dubai" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Discover Dubai</h3>
+                <p class="card-price">₹12,499</p>
+                <p class="card-details">5 Days, 4 Nights | Economy Class</p>
+                <p class="card-departure">Departure: Mumbai</p>
+                <p class="card-departure-info">Date: 1st Jan 2025 | Time: 06:15 AM</p>
+                <p class="card-airline">Airline: Indigo | Flight No: 6E123</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐⭐ 4.8/5</p>
+                <p class="card-capacity">Seats Left: 10</p>
+                <p class="card-policy">Free cancellation within 48 hours.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://www.africaodyssey.com/site/odyssey-image-proxy/country/maldives-holidays-holidays-and-honeymoons-to-the-maldives=403724-320.jpg" alt="Relax in Maldives" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Relax in Maldives</h3>
+                <p class="card-price">₹19,999</p>
+                <p class="card-details">6 Days, 5 Nights | Business Class</p>
+                <p class="card-departure">Departure: Bengaluru</p>
+                <p class="card-departure-info">Date: 5th Jan 2025 | Time: 09:45 AM</p>
+                <p class="card-airline">Airline: Air India | Flight No: AI456</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐ 4.7/5</p>
+                <p class="card-capacity">Seats Left: 5</p>
+                <p class="card-policy">Free cancellation within 24 hours.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://www.datocms-assets.com/101439/1701053620-tokyo.jpg?auto=format&fit=crop&h=800&w=1200" alt="Experience Tokyo" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Experience Tokyo</h3>
+                <p class="card-price">₹29,999</p>
+                <p class="card-details">7 Days, 6 Nights | Premium Economy</p>
+                <p class="card-departure">Departure: Chennai</p>
+                <p class="card-departure-info">
+                    Date: 10th Jan 2025 | Time: 12:30 PM
+                </p>
+                <p class="card-airline">Airline: SpiceJet | Flight No: SG789</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐⭐ 4.9/5</p>
+                <p class="card-capacity">Seats Left: 12</p>
+                <p class="card-policy">Refundable with a 10% fee.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo5rzsSsPTMtp48mQUuJE8LH5-psWOs15ogw&s" alt="Explore Singapore" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Explore Singapore</h3>
+                <p class="card-price">₹15,499</p>
+                <p class="card-details">4 Days, 3 Nights | Economy Class</p>
+                <p class="card-departure">Departure: Delhi</p>
+                <p class="card-departure-info">
+                    Date: 15th Jan 2025 | Time: 04:10 PM
+                </p>
+                <p class="card-airline">Airline: Vistara | Flight No: UK101</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐ 4.5/5</p>
+                <p class="card-capacity">Seats Left: 8</p>
+                <p class="card-policy">No refunds on cancellation.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="cards">
+        <div class="card">
+            <img src="https://media.timeout.com/images/106181719/image.jpg" alt="Romantic Paris" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Romantic Paris</h3>
+                <p class="card-price">₹35,999</p>
+                <p class="card-details">7 Days, 6 Nights | First Class</p>
+                <p class="card-departure">Departure: Kolkata</p>
+                <p class="card-departure-info">
+                    Date: 20th Jan 2025 | Time: 07:50 PM
+                </p>
+                <p class="card-airline">Airline: Go First | Flight No: G8321</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐⭐ 4.9/5</p>
+                <p class="card-capacity">Seats Left: 3</p>
+                <p class="card-policy">50% refund on cancellation.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!--card 6-->
+        <div class="card">
+            <img src="https://www.telegraph.co.uk/content/dam/Travel/Destinations/Europe/Italy/Rome/rome_destination_guide_main.jpg?imwidth=680 " alt="Historic Rome" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Historic Rome</h3>
+                <p class="card-price">₹22,999</p>
+                <p class="card-details">5 Days, 4 Nights | Economy Class</p>
+                <p class="card-departure">Departure: Hyderabad</p>
+                <p class="card-departure-info">
+                    Date: 25th Jan 2025 | Time: 10:00 AM
+                </p>
+                <p class="card-airline">Airline: Emirates | Flight No: EK333</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐ 4.6/5</p>
+                <p class="card-capacity">Seats Left: 7</p>
+                <p class="card-policy">Refundable with a 5% fee.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+            <img src="https://img.freepik.com/free-photo/nyc-aerial-view-new-york-city-night_181624-45081.jpg" alt="Vibrant New York" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Vibrant New York</h3>
+                <p class="card-price">₹40,499</p>
+                <p class="card-details">6 Days, 5 Nights | Business Class</p>
+                <p class="card-departure">Departure: Mumbai</p>
+                <p class="card-departure-info">
+                    Date: 30th Jan 2025 | Time: 01:20 PM
+                </p>
+                <p class="card-airline">Airline: Qatar Airways | Flight No: QR444</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐⭐ 4.8/5</p>
+                <p class="card-capacity">Seats Left: 15</p>
+                <p class="card-policy">Free cancellation within 24 hours.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc4OE_vKN8qI2Tzsqag0fYyi2HmHVpM2VrAQ&s" alt="Serene Kerala" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Serene Kerala</h3>
+                <p class="card-price">₹9,999</p>
+                <p class="card-details">3 Days, 2 Nights | Economy Class</p>
+                <p class="card-departure">Departure: Bengaluru</p>
+                <p class="card-departure-info">Date: 3rd Feb 2025 | Time: 06:30 AM</p>
+                <p class="card-airline">
+                    Airline: Singapore Airlines | Flight No: SQ555
+                </p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐ 4.7/5</p>
+                <p class="card-capacity">Seats Left: 20</p>
+                <p class="card-policy">Non-refundable.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="cards">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJNXCoD8KeHScpAKbXElh3sJM3Ojo0stb1tA&s" alt="Classic London" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Classic London</h3>
+                <p class="card-price">₹33,499</p>
+                <p class="card-details">7 Days, 6 Nights | Premium Economy</p>
+                <p class="card-departure">Departure: Delhi</p>
+                <p class="card-departure-info">Date: 8th Feb 2025 | Time: 11:15 AM</p>
+                <p class="card-airline">Airline: Lufthansa | Flight No: LH666</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐ 4.7/5</p>
+                <p class="card-capacity">Seats Left: 6</p>
+                <p class="card-policy">Refundable with a 10% fee.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card">
+            <img src="https://m.ahstatic.com/is/image/accorhotels/970117974:3by2?fmt=jpg&op_usm=1.75,0.3,2,0&resMode=sharp2&iccEmbed=true&icc=sRGB&dpr=on,1.5&wid=335&hei=223&qlt=80" alt="Sunny Sydney" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Sunny Sydney</h3>
+                <p class="card-price">₹38,999</p>
+                <p class="card-details">8 Days, 7 Nights | Business Class</p>
+                <p class="card-departure">Departure: Kolkata</p>
+                <p class="card-departure-info">
+                    Date: 12th Feb 2025 | Time: 02:45 PM
+                </p>
+                <p class="card-airline">
+                    Airline: British Airways | Flight No: BA777
+                </p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐⭐ 4.9/5</p>
+                <p class="card-capacity">Seats Left: 4</p>
+                <p class="card-policy">Free cancellation within 72 hours.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card">
+            <img src="https://www.johansens.com/wp-content/uploads/2016/08/Thailand-AYANA-Estate-Bali-73-e1673272835586.jpg" alt="Beautiful Bali" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Beautiful Bali</h3>
+                <p class="card-price">₹18,999</p>
+                <p class="card-details">5 Days, 4 Nights | Economy Class</p>
+                <p class="card-departure">Departure: Chennai</p>
+                <p class="card-departure-info">
+                    Date: 18th Feb 2025 | Time: 09:00 AM
+                </p>
+                <p class="card-airline">Airline: Thai Airways | Flight No: TG888</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐ 4.6/5</p>
+                <p class="card-capacity">Seats Left: 9</p>
+                <p class="card-policy">Refundable with a 7% fee.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="card">
+            <img src="https://images.pexels.com/photos/259447/pexels-photo-259447.jpeg" alt="Adventure in Cape Town" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Adventure in Cape Town</h3>
+                <p class="card-price">₹25,499</p>
+                <p class="card-details">6 Days, 5 Nights | Premium Economy</p>
+                <p class="card-departure">Departure: Bengaluru</p>
+                <p class="card-departure-info">
+                    Date: 22nd Feb 2025 | Time: 05:10 PM
+                </p>
+                <p class="card-airline">Airline: Etihad Airways | Flight No: EY999</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐ 4.8/5</p>
+                <p class="card-capacity">Seats Left: 14</p>
+                <p class="card-policy">No refunds on cancellation.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 13 -->
+    <div class="cards">
+        <div class="card">
+            <img src="https://travelbird-images.imgix.net/98/2c/982c0d7c0e80b18da0fafe6b4ab40aad?auto=compress%2Cformat&crop=faces%2Cedges%2Ccenter&fit=crop&h=450&w=675" alt="Buzzing Bangkok" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Buzzing Bangkok</h3>
+                <p class="card-price">₹12,499</p>
+                <p class="card-details">4 Days, 3 Nights | Economy Class</p>
+                <p class="card-departure">Departure: Mumbai</p>
+                <p class="card-departure-info">
+                    Date: 28th Feb 2025 | Time: 08:40 AM
+                </p>
+                <p class="card-airline">
+                    Airline: Turkish Airlines | Flight No: TK121
+                </p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐ 4.6/5</p>
+                <p class="card-capacity">Seats Left: 18</p>
+                <p class="card-policy">Free cancellation within 24 hours.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="card">
+            <img src="https://www.andbeyond.com/wp-content/uploads/sites/5/Amber-fort-jaipur-Rajasthan-India.jpg" alt="Royal Jaipur" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Royal Jaipur</h3>
+                <p class="card-price">₹8,999</p>
+                <p class="card-details">3 Days, 2 Nights | Economy Class</p>
+                <p class="card-departure">Departure: Delhi</p>
+                <p class="card-departure-info">Date: 4th Mar 2025 | Time: 07:50 AM</p>
+                <p class="card-airline">Airline: Cathay Pacific | Flight No: CX345</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐⭐ 4.8/5</p>
+                <p class="card-capacity">Seats Left: 25</p>
+                <p class="card-policy">Refundable with a 5% fee.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="card">
+            <img src="https://assets-news.housing.com/news/wp-content/uploads/2022/10/07122140/Canada-tourist-places-to-visit.jpg" alt="Charming Canada" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Charming Canada</h3>
+                <p class="card-price">₹45,999</p>
+                <p class="card-details">8 Days, 7 Nights | First Class</p>
+                <p class="card-departure">Departure: Hyderabad</p>
+                <p class="card-departure-info">
+                    Date: 10th Mar 2025 | Time: 03:15 PM
+                </p>
+                <p class="card-airline">
+                    Airline: Malaysia Airlines | Flight No: MH678
+                </p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐⭐ 4.9/5</p>
+                <p class="card-capacity">Seats Left: 8</p>
+                <p class="card-policy">Non-refundable.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+        <!--card 16-->
+        <div class="card">
+            <img src="https://www.khyberhotels.com/blog/wp-content/uploads/2023/10/winter-kashmir.jpg" alt="Heavenly Kashmir" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Heavenly Kashmir</h3>
+                <p class="card-price">₹14,999</p>
+                <p class="card-details">4 Days, 3 Nights | Economy Class</p>
+                <p class="card-departure">Departure: Delhi</p>
+                <p class="card-departure-info">
+                    Date: 15th Mar 2025 | Time: 09:30 AM
+                </p>
+                <p class="card-airline">
+                    Airline: American Airlines | Flight No: AA890
+                </p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐ 4.7/5</p>
+                <p class="card-capacity">Seats Left: 22</p>
+                <p class="card-policy">Refundable with a 5% fee.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 17 -->
+    <div class="cards">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbusayZfSAJB_OWlVl3Kq5p1JJs_TDjmvqmzXsvWBmwI4zxVCFYouXEIYmqtcnFQcJTTk&usqp=CAU" alt="Futuristic Tokyo" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Futuristic Tokyo</h3>
+                <p class="card-price">₹39,999</p>
+                <p class="card-details">7 Days, 6 Nights | Premium Economy</p>
+                <p class="card-departure">Departure: Bengaluru</p>
+                <p class="card-departure-info">Date: 20th Mar 2025 | Time: 04:50 PM</p>
+                <p class="card-airline">Airline: Delta Airlines | Flight No: DL234</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐⭐ 4.9/5</p>
+                <p class="card-capacity">Seats Left: 10</p>
+                <p class="card-policy">Refundable with a 10% fee.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="card">
+            <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2018-02/27/full/1519755212-901.jpg?im=FeatureCrop,size=(826,465)" alt="Exotic Maldives" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Exotic Maldives</h3>
+                <p class="card-price">₹29,999</p>
+                <p class="card-details">5 Days, 4 Nights | Economy Class</p>
+                <p class="card-departure">Departure: Kochi</p>
+                <p class="card-departure-info">Date: 25th Mar 2025 | Time: 06:10 AM</p>
+                <p class="card-airline">Airline: United Airlines | Flight No: UA567</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐ 4.7/5</p>
+                <p class="card-capacity">Seats Left: 12</p>
+                <p class="card-policy">Free cancellation within 48 hours.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1185953092/photo/the-main-attraction-of-paris-and-all-of-europe-is-the-eiffel-tower-in-the-rays-of-the-setting.jpg?s=612x612&w=0&k=20&c=ZneUFVlR5TPCooxRV1rldUAadqLxZEvOoyVCOrtpcRQ=" alt="Romantic Paris" class="card-image"
+            />
+            <div class="card-content">
+                <h3 class="card-title">Romantic Paris</h3>
+                <p class="card-price">₹34,999</p>
+                <p class="card-details">6 Days, 5 Nights | Business Class</p>
+                <p class="card-departure">Departure: Delhi</p>
+                <p class="card-departure-info">Date: 1st Apr 2025 | Time: 08:20 AM</p>
+                <p class="card-airline">Airline: Alaska Airlines | Flight No: AS890</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐⭐ 4.8/5</p>
+                <p class="card-capacity">Seats Left: 14</p>
+                <p class="card-policy">Refundable with a 5% fee.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 20 -->
+        <div class="card">
+            <img src="https://media.radissonhotels.net/image/marketing-campaigns-meta/local-attraction/16256-142873-f72235251_3xl.jpg?impolicy=Card" alt="Luxurious Dubai" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Luxurious Dubai</h3>
+                <p class="card-price">₹24,999</p>
+                <p class="card-details">4 Days, 3 Nights | Economy Class</p>
+                <p class="card-departure">Departure: Mumbai</p>
+                <p class="card-departure-info">Date: 5th Apr 2025 | Time: 03:50 PM</p>
+                <p class="card-airline">Airline: Qantas Airways | Flight No: QF234</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐ 4.6/5</p>
+                <p class="card-capacity">Seats Left: 20</p>
+                <p class="card-policy">Free cancellation within 24 hours.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 22 -->
+    <div class="cards">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVh2y0l4GKlRBrqzBn7zIkNgpC3l9FAtyrIA&s" alt="Majestic Leh-Ladakh" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Majestic Leh-Ladakh</h3>
+                <p class="card-price">₹19,999</p>
+                <p class="card-details">5 Days, 4 Nights | Economy Class</p>
+                <p class="card-departure">Departure: Chandigarh</p>
+                <p class="card-departure-info">Date: 10th Apr 2025 | Time: 07:00 AM</p>
+                <p class="card-airline">Airline: Scoot Airlines | Flight No: TR567</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐ 4.5/5</p>
+                <p class="card-capacity">Seats Left: 15</p>
+                <p class="card-policy">Refundable with a 7% fee.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 22 -->
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMhg2Wx1kzNEHczhOqN5abqJr6f9QAbztTNA&s" alt="Smart Singapore" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Smart Singapore</h3>
+                <p class="card-price">₹28,999</p>
+                <p class="card-details">5 Days, 4 Nights | Premium Economy</p>
+                <p class="card-departure">Departure: Chennai</p>
+                <p class="card-departure-info">Date: 15th Apr 2025 | Time: 01:30 PM</p>
+                <p class="card-airline">Airline: Jet Airways | Flight No: 9W890</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐⭐ 4.9/5</p>
+                <p class="card-capacity">Seats Left: 18</p>
+                <p class="card-policy">Free cancellation within 72 hours.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 23 -->
+        <div class="card">
+            <img src="https://www.villa-finder.com/magazine/wp-content/uploads/2023/12/ruth-georgiev-8oTmnnRjuHM-unsplash.jpg" alt="Scenic Swiss Alps" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Scenic Swiss Alps</h3>
+                <p class="card-price">₹42,999</p>
+                <p class="card-details">7 Days, 6 Nights | Business Class</p>
+                <p class="card-departure">Departure: Delhi</p>
+                <p class="card-departure-info">Date: 20th Apr 2025 | Time: 09:10 AM</p>
+                <p class="card-airline">Airline: Korean Air | Flight No: KE123</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐⭐ 4.9/5</p>
+                <p class="card-capacity">Seats Left: 5</p>
+                <p class="card-policy">Non-refundable.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Card 24 -->
+        <div class="card">
+            <img src="https://ik.imgkit.net/3vlqs5axxjf/external/http://images.ntmllc.com/v4/destination/United-States/Las-Vegas/112088_SCN_LasVegasNV_iStock836442596_ZEBBBB.jpg?tr=w-1200%2Cfo-auto" alt="Thrilling Las Vegas" class="card-image" />
+            <div class="card-content">
+                <h3 class="card-title">Thrilling Las Vegas</h3>
+                <p class="card-price">₹35,999</p>
+                <p class="card-details">6 Days, 5 Nights | Business Class</p>
+                <p class="card-departure">Departure: Hyderabad</p>
+                <p class="card-departure-info">Date: 25th Apr 2025 | Time: 04:00 PM</p>
+                <p class="card-airline">Airline: Japan Airlines | Flight No: JL456</p>
+                <p class="card-ratings">Ratings : ⭐⭐⭐⭐ 4.8/5</p>
+                <p class="card-capacity">Seats Left: 11</p>
+                <p class="card-policy">Refundable with a 10% fee.</p>
+                <button class="card-button">Book Now</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Sky Explorer</h2>
+                <p>Fly Beyond Boundaries</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="booking.html">Bookings</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Customer Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Travel Policies</a></li>
+                        <li><a href="#">Cancellation</a></li>
+                        <li><a href="#">Lost & Found</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +919281763480</p>
+                <p><i class="fa-solid fa-envelope"></i> support@skyexplorer.com</p>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>Skyexplorer Airlines
+                    <br />91SpringBoard Sector-44, <br /> Gurugram, Haryana - 122001, India.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2024 Sky Explorer. All Rights Reserved. |
+                <a href="#">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

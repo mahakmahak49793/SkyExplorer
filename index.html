@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sky Explorer</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">Sky Explorer</div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="booking.html">Bookings</a>
+        <a href="#about">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="customersupport.html">Customer Support</a>
+      </nav>
+      <button id="signin-btn">Sign In</button>
+    </header>
+
+    <section class="hero">
+      <div class="heroImg"></div>
+      <div class="hero-text">Fly to Your Next Great Adventure!</div>
+      <div class="form-box" id="form">
+        <i class="fa-solid fa-xmark" id="back"></i>
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Log In
+          </button>
+          <button type="button" class="toggle-btn" onclick="signup()">
+            Sign Up
+          </button>
+        </div>
+        <div class="social-icons">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+          />
+        </div>
+        <form id="login" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >Remember Password</span
+          >
+          <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <form id="signup" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email Id"
+            required
+          />
+          <input
+            type="password"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >I agree to the terms and conditions</span
+          >
+          <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+      </div>
+      <div class="hero-subtext">
+        <i
+          >At Sky Explorer, we believe travel is more than just reaching your
+          destination. It's about enjoying every moment of the journey,
+          surrounded by comfort, care, and unforgettable sights...</i
+        >
+      </div>
+      <a href="booking.html"
+        ><button class="explore-btn">Explore Destinations</button></a
+      >
+    </section>
+
+    <section class="why-choose-us">
+      <h2>Discover What Sets Us Apart</h2>
+      <div class="why-card">
+        <div class="card-icon">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/6948/6948360.png"
+            alt="Affordable Pricing"
+          />
+        </div>
+        <div class="card-content">
+          <h3>Affordable Pricing</h3>
+          <p>
+            We offer competitive prices without compromising on comfort and
+            service.
+          </p>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="card-icon">
+          <img src="https://cdn-icons-png.flaticon.com/512/8444/8444184.png" />
+        </div>
+        <div class="card-content">
+          <h3>Your Safety, Our Priority</h3>
+          <p>
+            Travel with peace of mind knowing that your safety is always our top
+            priority.
+          </p>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="card-icon">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD4q8nfItGXAQyYs_2qqZTbUxDQ_kHs_2YIA&s"
+            alt="Comfort"
+          />
+        </div>
+        <div class="card-content">
+          <h3>24/7 Support</h3>
+          <p>
+            24/7 online Support for your questions and concerns. More than just
+            flying.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="offers" class="offers">
+      <h2>Special Offers</h2>
+      <div class="offer">
+        <img src="offer.jpg" />
+
+        <div class="offer-card">
+          <h3>Your Dream Vacation is Just One Click Away!</h3>
+          <h1>20% Off Today Only</h1>
+          <p>
+            Experience the world with unbeatable savings.Don’t wait! Book today,
+            save 20%, and enjoy a smooth journey to the destination you've
+            always dreamed of. This offer is only available for today, so don’t
+            miss out!
+          </p>
+          <button class="book-btn">Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="bookings" class="bookings">
+      <h1>Upcoming Bookings</h1>
+      <p>
+        <i>
+          Looking Forward to Your Next Flight? Review All the Details and Stay
+          Prepared for Your Journey
+        </i>
+      </p>
+      <div class="booking-card">
+        <div class="dest">
+          <img
+            src="https://media.istockphoto.com/id/635758088/photo/sunrise-at-the-eiffel-tower-in-paris-along-the-seine.jpg?s=612x612&w=0&k=20&c=rdy3aU1CDyh66mPyR5AAc1yJ0yEameR_v2vOXp2uuMM="
+          />
+          <h4>
+            <!-- Dubai to Paris -->
+            DXB&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-arrow-left"></i
+            >&nbsp;&nbsp;CDG
+          </h4>
+          <hr />
+          <div class="flight-time">
+            <i class="fa-regular fa-clock"></i>
+            <p>9:00 AM - 3:00 PM</p>
+          </div>
+          <div class="flight-day">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>Wed Mar 06 2024</p>
+          </div>
+          <button class="bookflight-btn">BOOK NOW</button>
+        </div>
+        <div class="dest">
+          <img
+            src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2luZ2Fwb3JlfGVufDB8fDB8fHww"
+          />
+          <h4>
+            <!-- Sydney to Singapore -->
+            SYD&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-arrow-left"></i
+            >&nbsp;&nbsp;SIN
+          </h4>
+          <hr />
+          <div class="flight-time">
+            <i class="fa-regular fa-clock"></i>
+            <p>10:30 PM - 5:00 AM</p>
+          </div>
+          <div class="flight-day">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>Fri Mar 22 2024</p>
+          </div>
+          <button class="bookflight-btn">BOOK NOW</button>
+        </div>
+        <div class="dest">
+          <img
+            src="https://t3.ftcdn.net/jpg/02/65/23/70/360_F_265237090_Muthvb72m2POYFjyx7F5UCQLh9JdBtKN.jpg"
+          />
+          <h4>
+            <!-- San Francisco to Tokyo -->
+            SFO&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-arrow-left"></i
+            >&nbsp;&nbsp;HND
+          </h4>
+          <hr />
+          <div class="flight-time">
+            <i class="fa-regular fa-clock"></i>
+            <p>11:00 PM - 7:00 AM</p>
+          </div>
+          <div class="flight-day">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>Thu Apr 04 2024</p>
+          </div>
+          <button class="bookflight-btn">BOOK NOW</button>
+        </div>
+      </div>
+
+      <div class="booking-card">
+        <div class="dest">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzUqME3_q2Nh5I-PMBL7vMA8paL61l4XS-8Q&s"
+          />
+          <h4>
+            <!-- Delhi to New York -->
+            DEL&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-arrow-left"></i
+            >&nbsp;&nbsp;JFK
+          </h4>
+          <hr />
+          <div class="flight-time">
+            <i class="fa-regular fa-clock"></i>
+            <p>2:30 AM - 4:00 PM</p>
+          </div>
+          <div class="flight-day">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>Sat Apr 20 2024</p>
+          </div>
+          <button class="bookflight-btn">BOOK NOW</button>
+        </div>
+        <div class="dest">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSb2ZiQNXYd40uZTO7UcX1UW4p7h7xEiVMOA&s"
+          />
+          <h4>
+            <!-- Rome to Los Angeles -->
+            FCO&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-arrow-left"></i
+            >&nbsp;&nbsp;LAX
+          </h4>
+          <hr />
+          <div class="flight-time">
+            <i class="fa-regular fa-clock"></i>
+            <p>8:00 AM - 2:30 PM</p>
+          </div>
+          <div class="flight-day">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>Tue May 14 2024</p>
+          </div>
+          <button class="bookflight-btn">BOOK NOW</button>
+        </div>
+        <div class="dest">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/640px-London_Skyline_%28125508655%29.jpeg"
+          />
+          <h4>
+            <!-- New York to London -->
+            JFK&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-arrow-left"></i
+            >&nbsp;&nbsp;LHR
+          </h4>
+          <hr />
+          <div class="flight-time">
+            <i class="fa-regular fa-clock"></i>
+            <p>6:00 AM - 7:30 PM</p>
+          </div>
+          <div class="flight-day">
+            <i class="fa-solid fa-calendar-days"></i>
+            <p>Mon Feb 26 2024</p>
+          </div>
+          <button class="bookflight-btn">BOOK NOW</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <h2>Sky Explorer</h2>
+          <p>Fly Beyond Boundaries</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#destinations">Destinations</a></li>
+              <li><a href="#bookings">Bookings</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Customer Support</h3>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Travel Policies</a></li>
+              <li><a href="#">Cancellation</a></li>
+              <li><a href="#">Lost & Found</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fa-solid fa-phone"></i> +919281763480</p>
+          <p><i class="fa-solid fa-envelope"></i> support@skyexplorer.com</p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>Skyexplorer Airlines
+            <br />91SpringBoard Sector-44, <br />
+            Gurugram, Haryana - 122001, India.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Sky Explorer. All Rights Reserved. |
+          <a href="#">Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
