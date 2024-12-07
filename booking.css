@@ -112,19 +112,17 @@ input:focus {
 .search-btn {
   padding: 10px 15px;
   font-size: 16px;
-  background: linear-gradient(to right, #105de08e, #d3eff0);
+  background: linear-gradient(to right, #0066cc, #66ccff);
   border: none;
-  background-size: 200%;
   border-radius: 8px;
-  background-position: right;
   cursor: pointer;
-  transition: background-position 0.6s ease;
   margin-top: 3%;
+  color: white;
+  font-weight: 600;
 }
 
 .search-btn:hover {
-  /* background: linear-gradient(to right, #0d4dbc8e, #9eabb4); */
-  background-position: left;
+  background: linear-gradient(to right, #004d99, #33aaff);
 }
 
 .booking-title {
