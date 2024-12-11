@@ -242,6 +242,11 @@ body {
   margin-top: 20px;
 }
 
+.book-btn a {
+  text-decoration: none;
+  color: white;
+}
+
 .book-btn:hover {
   font-size: 19px;
   cursor: pointer;
@@ -320,6 +325,11 @@ body {
   position: absolute;
   right: 15px;
   bottom: 10px;
+}
+
+.bookflight-btn a {
+  text-decoration: none;
+  color: white;
 }
 
 .bookflight-btn:hover {
